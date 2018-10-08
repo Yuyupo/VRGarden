@@ -7,7 +7,7 @@ public class Hand : MonoBehaviour {
 
 	GameObject heldObject;
 	Controller controller;
-
+	bool held = false;
 	Rigidbody simulator;
 
 	// Use this for initialization
@@ -15,17 +15,22 @@ public class Hand : MonoBehaviour {
 		simulator = new GameObject ().AddComponent<Rigidbody> ();
 		simulator.name = "simulator";
 		simulator.transform.parent = transform.parent;
-
+		
 		controller = GetComponent<Controller> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (held && controller.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger)) {
+			heldObject.GetComponent<HeldObject>().Interact();
+		}
+
 		if (heldObject) {
 
 			simulator.velocity = (transform.position - simulator.position) * 50f;
 
-			if (controller.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger)) {
+			if (controller.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_Grip)) {
+				held = false;
 				heldObject.transform.parent = null;
 				heldObject.GetComponent<Rigidbody> ().isKinematic = false;
 				heldObject.GetComponent<Rigidbody> ().velocity = simulator.velocity;
@@ -33,8 +38,8 @@ public class Hand : MonoBehaviour {
 				heldObject = null;
 			}
 		} else {
-			if (controller.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger)) {
-				
+			if (controller.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip)) {
+				held = true;
 				Collider[] cols = Physics.OverlapSphere (transform.position, 0.1f);
 
 				foreach (Collider col in cols) {
@@ -49,5 +54,6 @@ public class Hand : MonoBehaviour {
 				}
 			}
 		}
+		
 	}
 }

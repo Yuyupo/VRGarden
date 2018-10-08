@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class HeldObject : MonoBehaviour {
+public abstract class  HeldObject : MonoBehaviour {
+
 	[HideInInspector]
 	public Controller parent;
+
+	public abstract void Interact();
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SmallTree
   - GrownTree
+  - Watercan
+  - Scissors
   layers:
   - Default
   - TransparentFX
