@@ -52,10 +52,5 @@ public class Branch : MonoBehaviour {
 		if (parentBranch != null) {
 			StartCoroutine (parentBranch.Infection ());
 		}
-
 	}
-
-
-		
-
 }

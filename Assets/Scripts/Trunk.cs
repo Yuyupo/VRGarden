@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Trunk : MonoBehaviour {
 	public GameObject tree;
-	public GameObject grownTree;
-	public int lifePoint;
+	public GameObject grownTree; 
 	public List<Branch> branches;
 	private bool dead;
 

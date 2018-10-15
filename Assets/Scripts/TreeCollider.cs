@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TreeCollider : MonoBehaviour {
 
-
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.name == "Scissor") {
 

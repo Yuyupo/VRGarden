@@ -8,6 +8,7 @@ TagManager:
   - GrownTree
   - Watercan
   - Scissors
+  - Plot
   layers:
   - Default
   - TransparentFX
