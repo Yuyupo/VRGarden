@@ -16,9 +16,9 @@ public class Land : MonoBehaviour {
 	// Update is called once per frame
 	void Start () {
 		// The dirt starts to dry out
-		InvokeRepeating("dryOut", 50.0f, 30.0f);
+		InvokeRepeating("dryOut", 2.0f, 5.0f);
 		// The plant uses the fertilizer
-		InvokeRepeating("eatingFertilizer", 120.0f, 30.0f);
+		InvokeRepeating("eatingFertilizer", 120.0f, 5.0f);
 		// Randomly call insects on your plant
 		// TODO: Enable this when i have a pesticide
 		// InvokeRepeating("callInsects", 2.0f, 0.1f);
