@@ -9,6 +9,7 @@
 # Using:
 [HTC Vive](https://www.vive.com/eu/product/)  
 [Unity](https://unity3d.com/)  
-[SteamVR](https://store.steampowered.com/steamvr)  
+[SteamVR](https://github.com/ValveSoftware/steamvr_unity_plugin) version: 1.2.3  
+[VRTK](https://github.com/thestonefox/VRTK/tree/release/v4.0.0) version: 4.0.0  
 building a garden where you can chill and prune your little trees and whatevs... :)
 
