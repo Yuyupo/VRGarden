@@ -9,6 +9,7 @@ TagManager:
   - Watercan
   - Scissors
   - Plot
+  - Plant
   layers:
   - Default
   - TransparentFX

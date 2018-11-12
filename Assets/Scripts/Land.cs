@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Runtime;
 
 public class Land : MonoBehaviour {
-
+	public GameObject plant;
 	public int water;
 	public int fertilization;
 	public bool insects;
@@ -36,7 +36,7 @@ public class Land : MonoBehaviour {
 	void dryOut() {
 		if (this.getWater() <= 0) {
 			//TODO: Start to rot after some time
-			Debug.Log("Pls water :C");
+			// Debug.Log("Pls water :C");
 		} else {
 			this.setWater(this.getWater()-10);
 		}
@@ -50,7 +50,14 @@ public class Land : MonoBehaviour {
 			this.setFertilization(this.getFertilization()-10);
 		}
 	}
+	
+	public GameObject getPlant() {
+		return this.plant;
+	}
 
+	public void setPlant(GameObject newPlant) {
+		this.plant = newPlant;
+	}
 	public int getWater() {
 		return this.water;
 	}

@@ -5,6 +5,7 @@
 [![Growing and cherry](https://img.youtube.com/vi/ZE9OwxRYXgQ/1.jpg)](https://www.youtube.com/watch?v=ZE9OwxRYXgQ)
 [![Cutting](https://img.youtube.com/vi/76S47v4UhYU/1.jpg)](https://youtu.be/76S47v4UhYU)
 [![Rot](https://img.youtube.com/vi/HVHKyn0ifyg/2.jpg)](https://youtu.be/HVHKyn0ifyg)
+[![Buy/Delete plant through UI](https://img.youtube.com/vi/lM78pdfkLd4/3.jpg)](https://youtu.be/lM78pdfkLd4)
 
 # Using:
 [HTC Vive](https://www.vive.com/eu/product/)  
