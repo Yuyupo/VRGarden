@@ -6,6 +6,7 @@
 [![Cutting](https://img.youtube.com/vi/76S47v4UhYU/1.jpg)](https://youtu.be/76S47v4UhYU)
 [![Rot](https://img.youtube.com/vi/HVHKyn0ifyg/2.jpg)](https://youtu.be/HVHKyn0ifyg)
 [![Buy/Delete plant through UI](https://img.youtube.com/vi/lM78pdfkLd4/3.jpg)](https://youtu.be/lM78pdfkLd4)
+[![Tools in action](https://img.youtube.com/vi/_l6xERh1WXc/3.jpg)](https://www.youtube.com/watch?v=_l6xERh1WXc)
 
 # Using:
 [HTC Vive](https://www.vive.com/eu/product/)  
