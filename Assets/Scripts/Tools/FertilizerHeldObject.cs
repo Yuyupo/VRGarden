@@ -16,7 +16,7 @@ public class FertilizerHeldObject : VRTK_InteractableObject {
 			// Debug.Log("Fertilizing");
 			Land land = sprayBottle.getCollision().gameObject.GetComponent<Land>();
 			if (land.getFertilization() < 100) {
-				land.setFertilization(land.getFertilization()+10);
+				land.setFertilization(land.getFertilization()+30);
 			} else {
 				land.setFertilization(100);
 			}

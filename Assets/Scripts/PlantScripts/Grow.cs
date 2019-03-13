@@ -26,10 +26,18 @@ public class Grow : MonoBehaviour {
 		
 	}
 
+	public void setLand(Land newLand) {
+		this.land = newLand;
+	}
+
 	private bool happy(){
+		Debug.Log("Water: "+land.getWater());
+		Debug.Log("Fertilization: "+land.getFertilization());
+		Debug.Log("Insects: "+land.getInsects());
 		// Debug.Log("Happy little tree");
 		if(land.getWater()>80 && land.getFertilization() > 80 && !land.getInsects()) {
 		// if(land.getWater()>80 && land.getFertilization() > 80) {
+
 			happytext.SetActive(true);
 			return true;
 		}

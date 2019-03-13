@@ -17,11 +17,11 @@ public class Land : MonoBehaviour {
 	void Start () {
 		Debug.Log(insectPicture);
 		// The dirt starts to dry out
-		InvokeRepeating("dryOut", 2.0f, 5.0f);
+		InvokeRepeating("dryOut", 120.0f, 5.0f);
 		// The plant uses the fertilizer
 		InvokeRepeating("eatingFertilizer", 120.0f, 5.0f);
 		// Randomly call insects on your plant
-		InvokeRepeating("callInsects", 5.0f, 0.1f);
+		InvokeRepeating("callInsects", 120.0f, 5.0f);
 	}
 
 	void callInsects() {
@@ -50,6 +50,7 @@ public class Land : MonoBehaviour {
 	}
 	
 	public GameObject getPlant() {
+		Debug.Log(this.plant);
 		return this.plant;
 	}
 

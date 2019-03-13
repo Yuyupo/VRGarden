@@ -15,7 +15,7 @@ public class WatercanHeldObject : VRTK_InteractableObject {
 			// Debug.Log("Watering");
 			Land land = can.getCollision().gameObject.GetComponent<Land>();
 			if (land.getWater() < 100) {
-				land.setWater(land.getWater()+10);
+				land.setWater(land.getWater()+30);
 			} else {
 				land.setWater(100);
 			}

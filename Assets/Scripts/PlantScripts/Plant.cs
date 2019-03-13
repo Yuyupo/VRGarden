@@ -14,9 +14,7 @@ public class Plant : MonoBehaviour {
 		** InvokeRepeating("rotting", 1.0f, 100.0f); 
 		*/
 	}
-	
-	void Update() {
-	}
+
 	public void rotting() {
 		Branch branch = GetComponent<Branch>();
 		// If there is a branch rot it
